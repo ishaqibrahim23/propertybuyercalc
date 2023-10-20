@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <title>Buyer's Calculator</title>
+</head>
+
+<body>
+  
+  <header>
+    <h1>
+       Property Buyer's Calculator
+    </h1>
+
+    <p>
+       This calculator help buyers to estimate the monthly payment of the property and minimum monthly income (excl. commitment) they should have to buy the property.
+    </p>
+  </header>
+  
+  <section>
+
+      <!--User insert house price-->
+      <label>House Price (RM) : </label>
+
+      <br />
+    
+      <input type="number" id="price" placeholder="Example: 250000" />
+    
+      <input type="button" value="Calculate" onclick="calculate()" />
+      <input type="button" value="Reset" onclick="reset()" />
+      
+      <br />
+      
+      <!--Results will be shows here-->
+      <label>  
+        <span id="result"></span>
+        <span id="result2"></span>
+      </label>
+
+      <!-- ----------
+      I don't know if i should show this formula or not. LOL.
+    
+      <aside>
+        <br /><br />
+        You can also calculate by yourself using these formula: <br /><br />
+        Est. Monthly Payment = House Price / 200 <br /><br />
+        Est. Minimum Monthly Income = Monthly Payment / 0.6
+      </aside>
+      ---------- -->
+      <br />
+  </section>
+
+  <footer>
+       &copy; 2023 This Calculator Belong To Ishaq Ibrahim
+  </footer>
+
+</body>
+
+</html>
